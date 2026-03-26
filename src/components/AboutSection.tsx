@@ -18,7 +18,7 @@ export default function AboutSection() {
             <p className="section-label">About</p>
             <h2 className="section-title mb-6">
               The writer behind the{' '}
-              <span className="text-amber-400">words</span>.
+              <span className="text-green-400">words</span>.
             </h2>
 
             <div className="space-y-4 text-gray-400 leading-relaxed">
@@ -62,10 +62,10 @@ export default function AboutSection() {
             {stats.map(({ icon: Icon, value, label }) => (
               <div
                 key={label}
-                className="flex items-center gap-5 p-5 bg-gray-900/60 border border-gray-800 rounded-xl hover:border-amber-400/30 transition-colors duration-300"
+                className="flex items-center gap-5 p-5 bg-gray-900/60 border border-gray-800 rounded-xl hover:border-green-400/30 transition-colors duration-300"
               >
-                <div className="p-3 bg-amber-400/10 rounded-lg flex-shrink-0">
-                  <Icon size={22} className="text-amber-400" />
+                <div className="p-3 bg-green-400/10 rounded-lg flex-shrink-0">
+                  <Icon size={22} className="text-green-400" />
                 </div>
                 <div>
                   <p className="text-2xl font-extrabold text-gray-100">{value}</p>
@@ -75,8 +75,8 @@ export default function AboutSection() {
             ))}
 
             {/* Certifications note */}
-            <div className="p-5 bg-amber-400/5 border border-amber-400/20 rounded-xl">
-              <p className="text-sm text-amber-400 font-semibold mb-1">Certifications</p>
+            <div className="p-5 bg-purple-500/5 border border-purple-500/20 rounded-xl">
+              <p className="text-sm text-purple-400 font-semibold mb-1">Certifications</p>
               <p className="text-sm text-gray-400">Digital Marketing &amp; Analytics — multiple platforms</p>
             </div>
           </div>

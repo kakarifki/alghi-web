@@ -12,7 +12,8 @@ export default function HeroSection() {
 
       {/* Radial glow center */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-400/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl"
+             style={{background: 'radial-gradient(circle, rgba(74,222,128,0.06) 0%, rgba(168,85,247,0.05) 60%, transparent 100%)'}} />
       </div>
 
       {/* Content */}
@@ -35,10 +36,10 @@ export default function HeroSection() {
         {/* Headline */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-100 leading-tight tracking-tight">
           Content that{' '}
-          <span className="text-amber-400">ranks</span>,<br />
-          resonates<span className="text-amber-400">,</span>{' '}
+          <span className="text-green-400">ranks</span>,<br />
+          resonates<span className="text-purple-500">,</span>{' '}
           and{' '}
-          <span className="text-amber-400">converts</span>.
+          <span className="text-green-400">converts</span>.
         </h1>
 
         {/* Sub-headline */}
@@ -66,9 +67,9 @@ export default function HeroSection() {
 
         {/* Stat pills */}
         <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-500">
-          <span className="flex items-center gap-1"><Dot className="text-amber-400" size={18} />3+ Years Experience</span>
-          <span className="flex items-center gap-1"><Dot className="text-amber-400" size={18} />6 Niches</span>
-          <span className="flex items-center gap-1"><Dot className="text-amber-400" size={18} />Multiple Publications</span>
+          <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />3+ Years Experience</span>
+          <span className="flex items-center gap-1"><Dot className="text-purple-400" size={18} />6 Niches</span>
+          <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />Multiple Publications</span>
         </div>
       </div>
 

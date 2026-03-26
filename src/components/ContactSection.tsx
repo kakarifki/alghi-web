@@ -19,7 +19,7 @@ export default function ContactSection() {
         <p className="section-label">Contact</p>
         <h2 className="section-title mb-4">
           Let's work{' '}
-          <span className="text-amber-400">together</span>.
+          <span className="text-green-400">together</span>.
         </h2>
         <p className="text-gray-400 text-lg max-w-lg mx-auto mb-10 leading-relaxed">
           Looking for a writer who crafts content that ranks <em>and</em> reads well?
@@ -53,7 +53,7 @@ export default function ContactSection() {
             href={GDRIVE_PORTFOLIO_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-amber-400 transition-colors duration-200 border-b border-dashed border-gray-700 hover:border-amber-400 pb-0.5"
+            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors duration-200 border-b border-dashed border-gray-700 hover:border-purple-400 pb-0.5"
           >
             <FolderOpen size={15} />
             Or browse full portfolio on Google Drive

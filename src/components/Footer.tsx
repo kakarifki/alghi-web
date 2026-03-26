@@ -8,7 +8,7 @@ export default function Footer() {
         <p>
           © {year}{' '}
           <span className="text-gray-400 font-semibold">
-            alghi<span className="text-amber-400">.</span>
+            alghi<span className="text-green-400">.</span>
           </span>{' '}
           All rights reserved.
         </p>
@@ -17,7 +17,7 @@ export default function Footer() {
             href={LINKEDIN_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-amber-400 transition-colors"
+            className="hover:text-green-400 transition-colors"
           >
             LinkedIn
           </a>

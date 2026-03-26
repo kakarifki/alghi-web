@@ -155,7 +155,7 @@ export const skills = [
   { label: 'Keyword Research', color: 'bg-teal-500/15 text-teal-400 border-teal-500/30' },
   { label: 'Yoast SEO', color: 'bg-green-500/15 text-green-400 border-green-500/30' },
   { label: 'Storytelling', color: 'bg-purple-500/15 text-purple-400 border-purple-500/30' },
-  { label: 'Copywriting', color: 'bg-amber-500/15 text-amber-400 border-amber-500/30' },
+  { label: 'Copywriting', color: 'bg-purple-500/15 text-purple-400 border-purple-500/30' },
   { label: 'Content Strategy', color: 'bg-rose-500/15 text-rose-400 border-rose-500/30' },
   { label: 'Content Marketing', color: 'bg-indigo-500/15 text-indigo-400 border-indigo-500/30' },
   { label: 'Google Analytics', color: 'bg-orange-500/15 text-orange-400 border-orange-500/30' },

@@ -48,9 +48,9 @@ export default function Header() {
         {/* Logo */}
         <a
           href="#"
-          className="text-xl font-extrabold text-gray-100 tracking-tight hover:text-amber-400 transition-colors"
+          className="text-xl font-extrabold text-gray-100 tracking-tight hover:text-green-400 transition-colors"
         >
-          alghi<span className="text-amber-400">.</span>
+          alghi<span className="text-green-400">.</span>
         </a>
 
         {/* Desktop Nav */}
@@ -61,7 +61,7 @@ export default function Header() {
               href={href}
               className={`btn-ghost text-sm ${
                 activeSection === href.slice(1)
-                  ? 'text-amber-400 bg-gray-800/60'
+                  ? 'text-green-400 bg-gray-800/60'
                   : ''
               }`}
             >
@@ -72,7 +72,7 @@ export default function Header() {
             href={GDRIVE_PORTFOLIO_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-3 flex items-center gap-1.5 px-4 py-2 text-sm font-medium border border-amber-400/50 text-amber-400 rounded-lg hover:bg-amber-400/10 transition-all duration-200"
+            className="ml-3 flex items-center gap-1.5 px-4 py-2 text-sm font-medium border border-purple-500/50 text-purple-400 rounded-lg hover:bg-purple-500/10 transition-all duration-200"
           >
             Portfolio <ExternalLink size={13} />
           </a>
@@ -81,7 +81,7 @@ export default function Header() {
         {/* Mobile: hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden p-2 text-gray-400 hover:text-amber-400 transition-colors"
+          className="md:hidden p-2 text-gray-400 hover:text-green-400 transition-colors"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -97,7 +97,7 @@ export default function Header() {
               href={href}
               onClick={handleNavClick}
               className={`block py-3 text-base font-medium border-b border-gray-800/50 last:border-0 ${
-                activeSection === href.slice(1) ? 'text-amber-400' : 'text-gray-300'
+                activeSection === href.slice(1) ? 'text-green-400' : 'text-gray-300'
               }`}
             >
               {label}
@@ -108,7 +108,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleNavClick}
-            className="flex items-center gap-2 py-3 text-amber-400 font-medium"
+            className="flex items-center gap-2 py-3 text-purple-400 font-medium"
           >
             View Portfolio (Drive) <ExternalLink size={14} />
           </a>

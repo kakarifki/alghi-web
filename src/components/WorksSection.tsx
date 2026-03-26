@@ -22,7 +22,7 @@ export default function WorksSection() {
           <p className="section-label">Works</p>
           <h2 className="section-title">
             Selected{' '}
-            <span className="text-amber-400">Portfolio</span>
+            <span className="text-green-400">Portfolio</span>
           </h2>
           <p className="mt-3 text-gray-400 max-w-lg">
             Artikel dan proyek copywriting yang telah diterbitkan — klik untuk membaca langsung.
@@ -37,7 +37,7 @@ export default function WorksSection() {
               onClick={() => setActiveFilter(cat)}
               className={`px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200 ${
                 activeFilter === cat
-                  ? 'bg-amber-400 text-gray-950 border-amber-400 shadow-md shadow-amber-400/20'
+                  ? 'bg-green-400 text-gray-950 border-green-400 shadow-md shadow-green-400/20'
                   : 'border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200'
               }`}
             >
