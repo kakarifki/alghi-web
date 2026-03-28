@@ -12,24 +12,24 @@ export default function HeroSection() {
       {/* Radial glow center */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl"
-             style={{background: 'radial-gradient(circle, rgba(74,222,128,0.06) 0%, rgba(168,85,247,0.05) 60%, transparent 100%)'}} />
+          style={{ background: 'radial-gradient(circle, rgba(74,222,128,0.06) 0%, rgba(168,85,247,0.05) 60%, transparent 100%)' }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-6 animate-slide-up">
 
-        {/* Open to Work badge */}
+        {/* Open to Work badge
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full text-sm text-green-400 font-medium animate-float">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
           </span>
           Open to Work
-        </div>
+        </div> */}
 
         {/* Eyebrow */}
         <p className="section-label !mb-0 text-sm">
-          SEO Content Writer &amp; Copywriter
+          Copywriter | Content Strategist | Creative Project Manager
         </p>
 
         {/* Headline */}
@@ -42,9 +42,13 @@ export default function HeroSection() {
         </h1>
 
         {/* Sub-headline */}
-        <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
+        {/* <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
           Spesialis konten <strong className="text-gray-300">Tech, Finance, Game &amp; Pop Culture</strong> yang
           menulis untuk mesin pencari <em>dan</em> manusia — readable, rankable, dan unforgettable.
+        </p> */}
+
+        <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
+          A versatile and experienced writer with a passion for storytelling and a talent for crafting compelling content.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-3 mt-2">
