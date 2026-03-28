@@ -1,10 +1,10 @@
 import { skills } from '../data/portfolioData';
-import { Award, Briefcase } from 'lucide-react';
+import { Award, Briefcase, Globe } from 'lucide-react';
 
 const stats = [
-  { icon: Briefcase, value: '3+', label: 'Years Experience' },
+  { icon: Briefcase, value: '4+', label: 'Years Experience' },
   { icon: Award, value: '6', label: 'Niches Covered' },
-  // { icon: GraduationCap, value: "S.I.Kom", label: 'Telkom University' },
+  { icon: Globe, value: "10+", label: 'Medium Publications' },
 ];
 
 export default function AboutSection() {

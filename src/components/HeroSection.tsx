@@ -60,7 +60,7 @@ export default function HeroSection() {
 
         {/* Stat pills */}
         <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-500">
-          <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />3+ Years Experience</span>
+          <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />4+ Years Experience</span>
           <span className="flex items-center gap-1"><Dot className="text-purple-400" size={18} />6 Niches</span>
           <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />Multiple Publications</span>
         </div>
