@@ -40,7 +40,7 @@ export default function WorksSection() {
             <span className="text-green-400">Portfolio</span>
           </h2>
           <p className="mt-3 text-gray-400 max-w-lg">
-            Artikel dan proyek copywriting yang telah diterbitkan — klik untuk membaca langsung.
+            A glimpse of works I've done through the years.
           </p>
         </div>
 
@@ -50,11 +50,10 @@ export default function WorksSection() {
             <button
               key={cat}
               onClick={() => handleCategoryChange(cat)}
-              className={`px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200 ${
-                activeFilter === cat
+              className={`px-4 py-2 text-sm font-medium rounded-full border transition-all duration-200 ${activeFilter === cat
                   ? 'bg-green-400 text-gray-950 border-green-400 shadow-md shadow-green-400/20'
                   : 'border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200'
-              }`}
+                }`}
             >
               {cat}
               {cat !== 'All' && (
@@ -84,11 +83,10 @@ export default function WorksSection() {
             {/* "All" sub-filter */}
             <button
               onClick={() => setActiveSubFilter('All')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${
-                activeSubFilter === 'All'
+              className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${activeSubFilter === 'All'
                   ? 'bg-purple-500 text-white border-purple-500 shadow-sm shadow-purple-500/20'
                   : 'border-gray-700 text-gray-500 hover:border-gray-500 hover:text-gray-300'
-              }`}
+                }`}
             >
               All {activeFilter}
             </button>
@@ -102,11 +100,10 @@ export default function WorksSection() {
                 <button
                   key={sub}
                   onClick={() => setActiveSubFilter(sub)}
-                  className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${
-                    activeSubFilter === sub
+                  className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${activeSubFilter === sub
                       ? 'bg-purple-500 text-white border-purple-500 shadow-sm shadow-purple-500/20'
                       : 'border-gray-700 text-gray-500 hover:border-gray-500 hover:text-gray-300'
-                  }`}
+                    }`}
                 >
                   {sub}
                   <span className={`ml-1 ${activeSubFilter === sub ? 'text-purple-200' : 'text-gray-600'}`}>
