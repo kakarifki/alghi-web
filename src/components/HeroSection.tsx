@@ -33,10 +33,10 @@ export default function HeroSection() {
         </p>
 
         {/* Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-100 leading-tight tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 leading-tight tracking-tight">
           Content that{' '}
           <span className="text-green-400">ranks</span>,<br />
-          resonates<span className="text-purple-500">,</span>{' '}
+          resonates,{' '}
           and{' '}
           <span className="text-green-400">converts</span>.
         </h1>
