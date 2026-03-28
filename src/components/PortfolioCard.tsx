@@ -15,12 +15,17 @@ export default function PortfolioCard({ item }: Props) {
       rel="noopener noreferrer"
       className="card-glass p-5 flex flex-col gap-3 cursor-pointer group block"
     >
-      {/* Top row: badge + year */}
-      <div className="flex items-center justify-between">
-        <span className={`skill-pill text-xs font-semibold border ${badgeClass}`}>
-          {item.category}
-        </span>
-        <span className="text-xs text-gray-600 font-medium tabular-nums">{item.date}</span>
+      {/* Top row: category badge + subcategory + year */}
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className={`skill-pill text-xs font-semibold border flex-shrink-0 ${badgeClass}`}>
+            {item.category}
+          </span>
+          <span className="text-xs text-purple-400/70 font-medium truncate">
+            {item.subCategory}
+          </span>
+        </div>
+        <span className="text-xs text-gray-600 font-medium tabular-nums flex-shrink-0">{item.date}</span>
       </div>
 
       {/* Title */}
