@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GDRIVE_PORTFOLIO_URL } from '../data/portfolioData';
-import { ExternalLink, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Works', href: '#works' },
@@ -68,14 +67,6 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a
-            href={GDRIVE_PORTFOLIO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-3 flex items-center gap-1.5 px-4 py-2 text-sm font-medium border border-purple-500/50 text-purple-400 rounded-lg hover:bg-purple-500/10 transition-all duration-200"
-          >
-            Portfolio <ExternalLink size={13} />
-          </a>
         </nav>
 
         {/* Mobile: hamburger */}
@@ -103,15 +94,6 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a
-            href={GDRIVE_PORTFOLIO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleNavClick}
-            className="flex items-center gap-2 py-3 text-purple-400 font-medium"
-          >
-            View Portfolio (Drive) <ExternalLink size={14} />
-          </a>
         </div>
       )}
     </header>

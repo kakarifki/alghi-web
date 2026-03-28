@@ -1,5 +1,5 @@
-import { EMAIL, LINKEDIN_URL, GDRIVE_PORTFOLIO_URL } from '../data/portfolioData';
-import { Mail, FolderOpen, ArrowUpRight } from 'lucide-react';
+import { EMAIL, LINKEDIN_URL } from '../data/portfolioData';
+import { Mail, ArrowUpRight } from 'lucide-react';
 
 // Inline LinkedIn SVG (lucide-react v0.x doesn't export Linkedin in all versions)
 function LinkedInIcon({ size = 17 }: { size?: number }) {
@@ -44,20 +44,6 @@ export default function ContactSection() {
             <LinkedInIcon size={17} />
             LinkedIn
             <ArrowUpRight size={14} />
-          </a>
-        </div>
-
-        {/* Secondary CTA: Google Drive Portfolio */}
-        <div className="mt-4">
-          <a
-            href={GDRIVE_PORTFOLIO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors duration-200 border-b border-dashed border-gray-700 hover:border-purple-400 pb-0.5"
-          >
-            <FolderOpen size={15} />
-            Or browse full portfolio on Google Drive
-            <ArrowUpRight size={12} />
           </a>
         </div>
       </div>

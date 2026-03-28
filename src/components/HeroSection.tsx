@@ -1,5 +1,4 @@
-import { GDRIVE_PORTFOLIO_URL } from '../data/portfolioData';
-import { ArrowDown, ExternalLink, Dot } from 'lucide-react';
+import { ArrowDown, Dot } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -48,20 +47,10 @@ export default function HeroSection() {
           menulis untuk mesin pencari <em>dan</em> manusia — readable, rankable, dan unforgettable.
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-3 mt-2">
           <a href="#works" className="btn-primary text-base px-8 py-3.5">
             View My Work
             <ArrowDown size={16} className="ml-1" />
-          </a>
-          <a
-            href={GDRIVE_PORTFOLIO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-outline text-base px-8 py-3.5"
-          >
-            Full Portfolio (Drive)
-            <ExternalLink size={15} />
           </a>
         </div>
 

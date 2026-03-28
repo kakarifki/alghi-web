@@ -15,11 +15,10 @@ export interface PortfolioItem {
 
 // ─── Constants ──────────────────────────────────────────────────────────────
 
-export const EMAIL = 'hello@alghi.dev';  // TODO: replace with real email
+export const EMAIL = 'alghialghi23@gmail.com';  // TODO: replace with real email
 
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/taufiqalghifr/';
 
-export const GDRIVE_PORTFOLIO_URL = 'https://drive.google.com/drive/folders/dummy-link-replace-me';  // TODO: replace with real GDrive link
 
 // ─── Category Info ────────────────────────────────────────────────────────────
 //
@@ -47,8 +46,8 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       'Alghi menulis konten teknologi yang menjembatani jargon teknis dan pembaca umum. ' +
       'Fokus pada topik AI, blockchain, dan tren digital yang sedang membentuk masa depan.',
     links: [
-      { label: 'IDN Times',   url: 'https://www.idntimes.com' },   // TODO: replace with article-specific link
-      { label: 'Kumparan',    url: 'https://kumparan.com' },
+      { label: 'IDN Times', url: 'https://www.idntimes.com' },   // TODO: replace with article-specific link
+      { label: 'Kumparan', url: 'https://kumparan.com' },
       { label: 'Glints Blog', url: 'https://glints.com/id/lowongan/blog/' },
     ],
   },
@@ -58,7 +57,7 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       'Dari panduan investasi pemula hingga analisis makro ekonomi, Alghi menyederhanakan ' +
       'konsep keuangan yang kompleks menjadi konten yang actionable dan mudah dicerna.',
     links: [
-      { label: 'OCBC NISP',    url: 'https://www.ocbc.id/id/article/2021/08/30/investasi-reksa-dana' }, // TODO
+      { label: 'OCBC NISP', url: 'https://www.ocbc.id/id/article/2021/08/30/investasi-reksa-dana' }, // TODO
       { label: 'DBS Treasures', url: 'https://www.dbs.id/treasures' },
       { label: 'Stockbit Blog', url: 'https://stockbit.com/#/' },
     ],
@@ -79,7 +78,7 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       'Dari gelombang K-Drama hingga evolusi meme internet, Alghi mengulas fenomena pop culture ' +
       'dengan sudut pandang yang segar dan berbasis data.',
     links: [
-      { label: 'Fimela',         url: 'https://www.fimela.com' },
+      { label: 'Fimela', url: 'https://www.fimela.com' },
       { label: 'Vice Indonesia', url: 'https://www.vice.com/id' },
     ],
   },
@@ -89,8 +88,7 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       'Alghi mengerjakan landing page, email campaign, dan materi iklan dengan pendekatan ' +
       'berbasis data: setiap kata dipilih untuk mendorong aksi nyata dari pembaca.',
     links: [
-      { label: 'Lihat Portfolio (Drive)', url: 'https://drive.google.com/drive/folders/dummy-link-replace-me' }, // TODO: replace with real GDrive
-      { label: 'Hubungi Alghi',           url: 'mailto:hello@alghi.dev' }, // TODO: replace with real email
+      { label: 'Hubungi Alghi', url: 'mailto:alghialghi23@gmail.com' },
     ],
   },
   'News': {
@@ -111,12 +109,12 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
 // To add a new subcategory: simply add a string to the array below.
 
 export const CATEGORY_SUBS: Record<Category, string[]> = {
-  'Tech':        ['AI & Tools', 'Blockchain', 'General Tech'],
-  'Finance':     ['Investing', 'Personal Finance', 'Economics'],
-  'Game':        ['Review', 'Industry'],
+  'Tech': ['AI & Tools', 'Blockchain', 'General Tech'],
+  'Finance': ['Investing', 'Personal Finance', 'Economics'],
+  'Game': ['Review', 'Industry'],
   'Pop Culture': ['K-Drama', 'Internet Culture'],
   'Copywriting': ['Landing Page', 'Email Campaign', 'Social Media'],
-  'News':        ['Startup', 'Business'],
+  'News': ['Startup', 'Business'],
 };
 
 // ─── Portfolio Data ──────────────────────────────────────────────────────────
