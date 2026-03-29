@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { portfolioItems, STRATEGIST_CATEGORIES, WRITING_CATEGORIES, CATEGORY_SUBS, type Category } from '../data/portfolioData';
 import PortfolioCard from './PortfolioCard';
 import CategoryInfoPanel from './CategoryInfoPanel';
@@ -14,23 +14,18 @@ interface PortfolioBlockProps {
 function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories }: PortfolioBlockProps) {
   const [activeFilter, setActiveFilter] = useState<Category | 'All'>('All');
   const [activeSubFilter, setActiveSubFilter] = useState<string>('All');
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(9);
 
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isModalOpen]);
-
-  // When category changes, reset sub-filter
+  // When category changes, reset sub-filter and visible limit
   const handleCategoryChange = (cat: Category | 'All') => {
     setActiveFilter(cat);
     setActiveSubFilter('All');
+    setVisibleCount(9);
+  };
+
+  const handleSubCategoryChange = (sub: string) => {
+    setActiveSubFilter(sub);
+    setVisibleCount(9);
   };
 
   // Available subcategories for the selected category
@@ -56,8 +51,9 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
   }, [activeFilter, activeSubFilter, categories]);
 
   const isLimited = activeFilter === 'All' || activeSubFilter === 'All';
-  const displayedItems = isLimited ? filtered.slice(0, 9) : filtered;
-  const hasMore = isLimited && filtered.length > 9;
+  const displayedItems = isLimited ? filtered.slice(0, visibleCount) : filtered;
+  const hasMore = isLimited && filtered.length > visibleCount;
+  const hasLess = isLimited && visibleCount > 9;
 
   return (
     <div className="mb-24">
@@ -112,7 +108,7 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
 
           {/* "All" sub-filter */}
           <button
-            onClick={() => setActiveSubFilter('All')}
+            onClick={() => handleSubCategoryChange('All')}
             className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${
               activeSubFilter === 'All'
                 ? 'bg-purple-500 text-white border-purple-500 shadow-sm shadow-purple-500/20'
@@ -130,7 +126,7 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
             return (
               <button
                 key={sub}
-                onClick={() => setActiveSubFilter(sub)}
+                onClick={() => handleSubCategoryChange(sub)}
                 className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200 ${
                   activeSubFilter === sub
                     ? 'bg-purple-500 text-white border-purple-500 shadow-sm shadow-purple-500/20'
@@ -171,55 +167,30 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
         ))}
       </div>
 
-      {hasMore && (
-        <div className="mt-12 flex justify-center pb-4">
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="px-8 py-3 bg-gray-900 hover:bg-gray-800 text-gray-200 font-medium rounded-full border border-gray-700 transition-all duration-200 shadow-lg shadow-black/20"
-          >
-            Read More
-          </button>
+      {(hasMore || hasLess) && (
+        <div className="mt-12 flex justify-center gap-4 pb-4">
+          {hasMore && (
+            <button
+              onClick={() => setVisibleCount(prev => prev + 6)}
+              className="px-8 py-3 bg-gray-900 hover:bg-gray-800 text-gray-200 font-medium rounded-full border border-gray-700 transition-all duration-200 shadow-lg shadow-black/20"
+            >
+              Read More
+            </button>
+          )}
+          {hasLess && (
+            <button
+              onClick={() => setVisibleCount(9)}
+              className="px-8 py-3 bg-transparent hover:bg-gray-900 text-gray-400 hover:text-gray-200 font-medium rounded-full border border-gray-800 transition-all duration-200"
+            >
+              Show Less
+            </button>
+          )}
         </div>
       )}
 
       {filtered.length === 0 && (
         <div className="text-center py-20 text-gray-600">
           No items in this subcategory yet.
-        </div>
-      )}
-
-      {/* ── Read More Modal ── */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 !m-0">
-          <div className="bg-gray-900 border border-gray-800 rounded-3xl w-full max-w-6xl max-h-[90vh] flex flex-col items-stretch overflow-hidden shadow-2xl animate-fade-in shadow-black/50 text-left">
-            <div className="flex items-center justify-between p-6 sm:px-8 border-b border-gray-800 bg-gray-900">
-              <div>
-                <h3 className="text-2xl font-bold font-cabinet text-gray-100">
-                  {activeFilter === 'All' ? label : activeFilter}
-                  {activeFilter !== 'All' && activeSubFilter !== 'All' ? ` - ${activeSubFilter}` : ''}
-                </h3>
-                <p className="text-gray-400 mt-1">
-                  Viewing all {filtered.length} items
-                </p>
-              </div>
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="p-2 text-gray-400 hover:text-white hover:bg-gray-800 rounded-xl transition-colors"
-                aria-label="Close modal"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div className="p-6 sm:p-8 overflow-y-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {filtered.map((item) => (
-                  <PortfolioCard key={`modal-${item.id}`} item={item} />
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       )}
     </div>
