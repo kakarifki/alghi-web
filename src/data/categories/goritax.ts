@@ -20,7 +20,7 @@ export const goritaxData: CategoryData = {
       publication: 'Goritax',
       highlight: 'Shared over 500 times across social media platforms.',
       link: 'https://www.instagram.com/p/CiKNJTqvvU6/?img_index=1',
-      date: '2024',
+      date: '2022',
       image: '/images/goritax/goritax 1.png',
       caption: 'Buat Gorifren yang nonton Moto GP, pasti udah ga asing kan sama Mba Rara?',
     },
