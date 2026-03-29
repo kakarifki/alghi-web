@@ -34,11 +34,7 @@ export default function HeroSection() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-400 leading-tight tracking-tight">
-          Content that{' '}
-          <span className="text-green-400">ranks</span>,<br />
-          resonates,{' '}
-          and{' '}
-          <span className="text-green-400">converts</span>.
+          Content built to be found, written to be felt.
         </h1>
 
         {/* Sub-headline */}
@@ -48,7 +44,7 @@ export default function HeroSection() {
         </p> */}
 
         <p className="text-lg text-gray-400 max-w-xl leading-relaxed">
-          A versatile and experienced writer with a passion for storytelling and a talent for crafting compelling content.
+          Meet Alghi. Experienced in social media strategy, from planning and scheduling to collaborating, and a versatile writer with a passion for storytelling and crafting compelling content.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-3 mt-2">
@@ -61,7 +57,7 @@ export default function HeroSection() {
         {/* Stat pills */}
         <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-500">
           <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />4+ Years Experience</span>
-          <span className="flex items-center gap-1"><Dot className="text-purple-400" size={18} />6 Niches</span>
+          <span className="flex items-center gap-1"><Dot className="text-purple-400" size={18} />16 Niches</span>
           <span className="flex items-center gap-1"><Dot className="text-green-400" size={18} />Multiple Publications</span>
         </div>
       </div>
