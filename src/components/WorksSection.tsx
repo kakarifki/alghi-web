@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { portfolioItems, STRATEGIST_CATEGORIES, WRITING_CATEGORIES, CATEGORY_SUBS, type Category } from '../data/portfolioData';
 import PortfolioCard from './PortfolioCard';
+import InstagramCard from './InstagramCard';
 import CategoryInfoPanel from './CategoryInfoPanel';
 
 interface PortfolioBlockProps {
@@ -9,9 +10,10 @@ interface PortfolioBlockProps {
   titleSpan2: string;
   description: string;
   categories: Array<Category | 'All'>;
+  showSubcategories?: boolean;
 }
 
-function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories }: PortfolioBlockProps) {
+function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories, showSubcategories = true }: PortfolioBlockProps) {
   const [activeFilter, setActiveFilter] = useState<Category | 'All'>('All');
   const [activeSubFilter, setActiveSubFilter] = useState<string>('All');
   const [visibleCount, setVisibleCount] = useState(9);
@@ -97,7 +99,7 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
       )}
 
       {/* ── Subcategory Filter (Level 2) ── */}
-      {activeFilter !== 'All' && (
+      {showSubcategories && activeFilter !== 'All' && (
         <div className="flex flex-wrap items-center gap-2 mb-8 pl-1 animate-fade-in">
           {/* Indented connector line */}
           <div className="flex items-center gap-2 text-gray-700 text-xs mr-1 hidden sm:flex">
@@ -163,7 +165,11 @@ function PortfolioBlock({ label, titleSpan1, titleSpan2, description, categories
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 animate-fade-in"
       >
         {displayedItems.map((item) => (
-          <PortfolioCard key={item.id} item={item} />
+          item.type === 'instagram' ? (
+            <InstagramCard key={item.id} item={item} />
+          ) : (
+            <PortfolioCard key={item.id} item={item} />
+          )
         ))}
       </div>
 
@@ -207,6 +213,7 @@ export default function WorksSection() {
           titleSpan2="Selected Portfolio"
           description="I managed creative projects from planning and scheduling to collaboration, working with copywriters, designers, and animators to produce clear, engaging content."
           categories={STRATEGIST_CATEGORIES}
+          showSubcategories={false}
         />
 
         <PortfolioBlock

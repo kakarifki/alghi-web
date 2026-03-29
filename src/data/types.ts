@@ -2,6 +2,7 @@ export type Category = 'Tech' | 'Game' | 'Pop Culture' | 'News' | 'SP Group' | '
 
 export interface PortfolioItem {
   id: number;
+  type?: 'article' | 'instagram';
   title: string;
   category: Category;
   subCategory: string;   // Must match one of the strings in CATEGORY_SUBS[category]
@@ -9,6 +10,8 @@ export interface PortfolioItem {
   highlight: string;     // One-liner achievement / SEO result / objective
   link: string;          // URL to the published article
   date: string;          // e.g. "2023", "2024"
+  image?: string;
+  caption?: string;
 }
 
 export interface CategoryLink {
