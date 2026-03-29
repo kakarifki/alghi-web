@@ -75,6 +75,7 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       'Where I write and reflect about pop culture in a more personal way.',
     links: [
       { label: 'Medium', url: 'https://medium.com/@moonsoaked' },
+      { label: 'Substack', url: 'https://upstreamoftime.substack.com/' },
     ],
   },
   'News': {
@@ -123,7 +124,7 @@ export const CATEGORY_SUBS: Record<Category, string[]> = {
   'Tech': ['Hardware', 'Software'],
   'Finance': ['Investing', 'Personal Finance', 'Economics'],
   'Game': ['Guides', 'Builds', 'Updates'],
-  'Pop Culture': ['Music', 'Anime'],
+  'Pop Culture': ['Music', 'Anime', 'Literature'],
   'News': ['Startup', 'Business'],
   'SP Group': ['Campaign', 'Social Media'],
   'Fluimucil': ['Health Article', 'Ads'],
@@ -808,6 +809,42 @@ export const portfolioItems: PortfolioItem[] = [
     highlight: 'Membedah lirik lagu Nadin Amizah - Mendarah.',
     link: 'https://medium.com/@moonsoaked/tentang-mengenang-yang-telah-berpulang-lewat-lagu-nadin-amizah-mendarah-e56327b827f8',
     date: '2020',
+  },
+
+  // ── Pop Culture / Literature ──────────────────────────────────────────
+  {
+    id: 21,
+    title: 'Book Review : An Apprenticeship or The Book of Pleasures by Clarice Lispector',
+    category: 'Pop Culture',
+    subCategory: 'Literature',
+    publication: 'Substack',
+    highlight: 'My review on An Apprenticeship or The Book of Pleasures by Clarice Lispector.',
+    link: 'https://upstreamoftime.substack.com/p/book-review-an-apprenticeship-or',
+    date: '2025',
+  },
+
+  // ── Pop Culture / Literature ──────────────────────────────────────────
+  {
+    id: 22,
+    title: 'Book Review : Swann’s Way by Marcel Proust',
+    category: 'Pop Culture',
+    subCategory: 'Literature',
+    publication: 'Substack',
+    highlight: 'My review on Swann’s Way by Marcel Proust.',
+    link: 'https://upstreamoftime.substack.com/p/book-review-swanns-way-by-marcel',
+    date: '2025',
+  },
+
+  // ── Pop Culture / Literature ──────────────────────────────────────────
+  {
+    id: 23,
+    title: 'Book Review : The Melancholy of Resistance by László Krasznahorkai',
+    category: 'Pop Culture',
+    subCategory: 'Literature',
+    publication: 'Substack',
+    highlight: 'My review on The Melancholy of Resistance by László Krasznahorkai',
+    link: 'https://upstreamoftime.substack.com/p/book-review-the-melancholy-of-resistance',
+    date: '2025',
   },
 
   // ── SP Group ──────────────────────────────────────────────────────────────
