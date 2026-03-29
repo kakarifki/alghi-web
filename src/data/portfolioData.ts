@@ -79,12 +79,11 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
     ],
   },
   'News': {
-    tagline: 'Berita bisnis dan startup yang langsung ke inti.',
+    tagline: 'Simple, clear, and reliable updates.',
     description:
-      'Liputan peristiwa bisnis dan ekosistem startup Indonesia yang ditulis dengan ' +
-      'gaya jurnalistik ringkas — fakta pertama, opini setelahnya.',
+      'This is where I write about news across sports, esports, and entertainment.',
     links: [
-      { label: 'Tempo.co', url: 'https://tempo.co' },
+      { label: 'ZonaBanten.com', url: 'https://zonabanten.pikiran-rakyat.com/author/5449/muhammad-taufiq-al-ghifari' },
     ],
   },
   'SP Group': {
@@ -125,7 +124,7 @@ export const CATEGORY_SUBS: Record<Category, string[]> = {
   'Finance': ['Investing', 'Personal Finance', 'Economics'],
   'Game': ['Guides', 'Builds', 'Updates'],
   'Pop Culture': ['Music', 'Anime', 'Literature'],
-  'News': ['Startup', 'Business'],
+  'News': ['Sports', 'Anime', 'E-Sports'],
   'SP Group': ['Campaign', 'Social Media'],
   'Fluimucil': ['Health Article', 'Ads'],
   'United Medicare Centre': ['Brochure', 'Web Copy'],
@@ -907,17 +906,186 @@ export const portfolioItems: PortfolioItem[] = [
     date: '2024',
   },
 
-  // ── News / Startup ──────────────────────────────────────────────────────────
+  // ── News / Sports ──────────────────────────────────────────────────────────
   {
-    id: 13,
-    title: 'Startup Unicorn Baru Indonesia: Kisah Sukses di Tengah Krisis',
+    id: 106,
+    title: 'Rafa Benitez Ingin Reuni, Sean Longstaff Resmi Ditawar Everton',
     category: 'News',
-    subCategory: 'Startup',
-    publication: 'Tempo.co',
-    highlight: 'Masuk halaman utama Tempo.co selama 3 hari berturut-turut',
-    link: 'https://tempo.co',
+    subCategory: 'Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Everton telah mengajukan tawaran untuk gelandang Newcastle Sean Longstaff, seperti yang dilansir oleh Sky Sports.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233410902/rafa-benitez-ingin-reuni-sean-longstaff-resmi-ditawar-everton',
     date: '2022',
   },
+
+  // ── News / Sports ──────────────────────────────────────────────────────────
+  {
+    id: 107,
+    title: 'Allegri Konfirmasi Ramsey Ingin Pergi dan Morata akan Bertahan di Juventus',
+    category: 'News',
+    subCategory: 'Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari Euro Sport, Massimiliano Allegri telah mengonfirmasi bahwa Aaron Ramsey akan meninggalkan Juventus.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233410710/allegri-konfirmasi-ramsey-ingin-pergi-dan-morata-akan-bertahan-di-juventus',
+    date: '2022',
+  },
+
+  // ── News / Sports ──────────────────────────────────────────────────────────
+  {
+    id: 108,
+    title: 'Jelang Laga Melawan Chelsea, Conte Konfirmasi 2 Kasus Covid di Kubu Spurs',
+    category: 'News',
+    subCategory: 'Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari Euro Sport, Spurs sedang memeriksa terkait terdapat 2 kasus dugaan Covid-19 dalam skuad mereka menjelang leg pertama semifinal Piala Liga melawan Chelsea pada Rabu nanti',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233394077/jelang-laga-melawan-chelsea-conte-konfirmasi-2-kasus-covid-di-kubu-spurs',
+    date: '2022',
+  },
+
+  // ── News / Sports ──────────────────────────────────────────────────────────
+  {
+    id: 109,
+    title: 'Mohamed Salah dan Elneny Masuk Daftar Skuad Mesir untuk AFCON, Berikut Daftar Lengkapnya!',
+    category: 'News',
+    subCategory: 'Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Mesir telah memasukkan Mohamed Salah, Mohamed Elneny dan Trezeguet jelang skuad Piala Afrika 2021 mereka.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233355508/mohamed-salah-dan-elneny-masuk-daftar-skuad-mesir-untuk-afcon-berikut-daftar-lengkapnya',
+    date: '2022',
+  },
+
+  // ── News / Sports ──────────────────────────────────────────────────────────
+  {
+    id: 110,
+    title: 'Manajer Arsenal Mikel Arteta Positif Covid-19 dan Harus Absen Jelang Laga Melawan Man City',
+    category: 'News',
+    subCategory: 'Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Mikel Arteta akan absen pada pertandingan Arsenal melawan Manchester City pada Tahun Baru setelah dinyatakan positif Covid-19, seperti yang dilansir oleh Sky Sports.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233350183/manajer-arsenal-mikel-arteta-positif-covid-19-dan-harus-absen-jelang-laga-melawan-man-city',
+    date: '2022',
+  },
+
+  // ── News / Anime ──────────────────────────────────────────────────────────
+  {
+    id: 111,
+    title: 'BREAKING, Tatsuhisa Suzuki Dikeluarkan Sebagai Pengisi Suara Draken Tokyo Revengers',
+    category: 'News',
+    subCategory: 'Anime',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari situs resmi pada adaptasi anime dari manga yang ditulis dan diilustrasikan oleh Ken Wakui, Tokyo Revengers, diumumkan bahwa pengisi suara Tatsuhisa Suzuki telah dikeluarkan sebagai pengisi suara Draken.',
+    link: 'https://zonabanten.pikiran-rakyat.com/entertainment/pr-233330803/breaking-tatsuhisa-suzuki-dikeluarkan-sebagai-pengisi-suara-draken-tokyo-revengers',
+    date: '2021',
+  },
+
+  // ── News / Anime ──────────────────────────────────────────────────────────
+  {
+    id: 112,
+    title: 'Kabar Baik, Solo Leveling Akan Mendapatkan Adaptasi Anime, Simak Sinopsisnya!',
+    category: 'News',
+    subCategory: 'Anime',
+    publication: 'ZonaBanten.com',
+    highlight: 'Sebuah bocoran yang dibuat oleh leaker ternama Spytrue, mengindikasikan bahwa webtoon yang diangkat dari novel karya Chugong, Solo Leveling, akan mendapatkan adaptasi anime.',
+    link: 'https://zonabanten.pikiran-rakyat.com/entertainment/pr-233393901/kabar-baik-solo-leveling-akan-mendapatkan-adaptasi-anime-simak-sinopsisnya',
+    date: '2021',
+  },
+
+  // ── News / Anime ──────────────────────────────────────────────────────────
+  {
+    id: 113,
+    title: 'Masih Sangat Panjang, Anime One Piece Akan Bertahan Hingga 8 Tahun Lagi',
+    category: 'News',
+    subCategory: 'Anime',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari situs web Jepang, Asahi, diinformasikan wawancara dengan pengisi suara Luffy, Mayumi Tanaka mengenai serial animasi One Piece dan pendapatnya tentang serial tersebut.',
+    link: 'https://zonabanten.pikiran-rakyat.com/entertainment/pr-233393718/masih-sangat-panjang-anime-one-piece-akan-bertahan-hingga-8-tahun-lagi',
+    date: '2021',
+  },
+
+  // ── News / Anime ──────────────────────────────────────────────────────────
+  {
+    id: 114,
+    title: 'Fans Bleace Jangan Ketinggalan, Anime Bleach: Sennen Kessen-hen akan Tayang Oktober 2022!',
+    category: 'News',
+    subCategory: 'Anime',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari situs somoskudasai, diinformasikan bahwa anime Bleach: Sennen Kessen-hen (Bleach: Thousand-Year Blood War Arc), yang merupakan arc terakhir dari manga, Sennen Kessen-hen (Saga of the Bloody War of a Thousand Years), akan tayang perdana selama musim Gugur-2022 (Oktober-Desember).',
+    link: 'https://zonabanten.pikiran-rakyat.com/entertainment/pr-233258168/fans-bleace-jangan-ketinggalan-anime-bleach-sennen-kessen-hen-akan-tayang-oktober-2022',
+    date: '2021',
+  },
+
+  // ── News / Anime ──────────────────────────────────────────────────────────
+  {
+    id: 115,
+    title: 'Novel Koukyuu no Karasu Akan Mendapatkan Adaptasi Anime, Simak Sinopsisnya!',
+    category: 'News',
+    subCategory: 'Anime',
+    publication: 'ZonaBanten.com',
+    highlight: 'Dilansir dari Somoskudasai, Penerbit Orange Bunko Shueisha mengumumkan bahwa novel Kouko Shirakawa, Koukyuu no Karasu (A Raven in the Harem), akan memiliki adaptasi anime.',
+    link: 'https://zonabanten.pikiran-rakyat.com/entertainment/pr-233233736/novel-koukyuu-no-karasu-akan-mendapatkan-adaptasi-anime-simak-sinopsisnya',
+    date: '2021',
+  },
+
+  // ── News / E-Sports ──────────────────────────────────────────────────────────
+  {
+    id: 115,
+    title: 'BOOM Esports Dota 2 Jadi Tim Terbaik Ke-3 di Dunia, Kalahkan T1 dan OG!',
+    category: 'News',
+    subCategory: 'E-Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Tim yang tadinya memiliki roster dengan full pemain profesional Indonesia saat ini merubah tatanan roster yang mereka miliki menjadi empat Filipina dan satu Indonesia.',
+    link: 'https://zonabanten.pikiran-rakyat.com/gadget/pr-233340324/boom-esports-dota-2-jadi-tim-terbaik-ke-3-di-dunia-kalahkan-t1-dan-og',
+    date: '2021',
+  },
+
+  // ── News / E-Sports ──────────────────────────────────────────────────────────
+  {
+    id: 116,
+    title: 'Selamat Tinggal, Bigetron Alpha Resmi Berpisah dengan Sang Kapten, Branz!',
+    category: 'News',
+    subCategory: 'E-Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Branz sendiri merupakan salah satu pemain yang berpengaruh di dalam roster karena kepiawaiannya bermain hero-hero carry dan lainnya.',
+    link: 'https://zonabanten.pikiran-rakyat.com/gadget/pr-233287700/selamat-tinggal-bigetron-alpha-resmi-berpisah-dengan-sang-kapten-branz',
+    date: '2021',
+  },
+
+  // ── News / E-Sports ──────────────────────────────────────────────────────────
+  {
+    id: 117,
+    title: 'Kalahkan ONIC PH, Blacklist International Juara di M3 Championship!',
+    category: 'News',
+    subCategory: 'E-Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'M3 World Championship 2021 telah selesai dan mengeluarkan Blacklist International sebagai jawara setelah berhasil mengalahkan ONIC PH di Grand Final dengan skor telak 4-0.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233279567/kalahkan-onic-ph-blacklist-international-juara-di-m3-championship',
+    date: '2021',
+  },
+
+  // ── News / E-Sports ──────────────────────────────────────────────────────────
+  {
+    id: 118,
+    title: 'Juara, Buriram United Raih Gelar AIC 2021 dan Bawa Pulang 6 Miliar Rupiah!',
+    category: 'News',
+    subCategory: 'E-Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Grand Final dari AIC 2021 menyajikan pertandingan antara Buriram United menghadapi V Gaming.',
+    link: 'https://zonabanten.pikiran-rakyat.com/olahraga/pr-233279601/juara-buriram-united-raih-gelar-aic-2021-dan-bawa-pulang-6-miliar-rupiah',
+    date: '2021',
+  },
+
+  // ── News / E-Sports ──────────────────────────────────────────────────────────
+  {
+    id: 119,
+    title: 'Piala Presiden Esports Resmi Dimulai, Berikut Cabang Game yang Dilombakan!',
+    category: 'News',
+    subCategory: 'E-Sports',
+    publication: 'ZonaBanten.com',
+    highlight: 'Kejuaraan olahraga esports terbesar di Indonesia, Piala Presiden Esports 2021 segera memasuki babak grand final pada 17 – 19 Desember di Mangupura Hall – The Westin Resort, Nusa Dua, Bali.',
+    link: 'https://zonabanten.pikiran-rakyat.com/gadget/pr-233258083/piala-presiden-esports-resmi-dimulai-berikut-cabang-game-yang-dilombakan',
+    date: '2021',
+  },
+
 ];
 
 // ─── Skills ─────────────────────────────────────────────────────────────────
