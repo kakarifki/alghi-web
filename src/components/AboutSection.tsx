@@ -1,4 +1,4 @@
-import { skills } from '../data/portfolioData';
+import { skillCategories } from '../data/portfolioData';
 import { Award, Briefcase, Globe } from 'lucide-react';
 
 const stats = [
@@ -23,37 +23,39 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p>
-                <strong className="text-gray-200">Alghi</strong> has over{' '}
-                <strong className="text-gray-200">3 years</strong> of writing experience across a wide range of
-                industries and topics, including technology, finance, game, pop culture, news, and personal development.
+                <strong className="text-gray-200">Alghi</strong> is a writer with over{' '}
+                <strong className="text-gray-200">4 years</strong> of experience creating content across psychology, pop culture, technology, finance, and personal development.
               </p>
               <p>
-                Alghi has a proven track record of delivering{' '}
-                <strong className="text-gray-200">high-quality, original, and engaging content</strong> that improves
-                search engine visibility and rankings — skilled in using Yoast SEO Plugin, conducting keyword research
-                and analysis, and optimizing content for specific keywords and best practices.
+                He has also worked as a Social Media Strategist and Creative Project Manager, managing creative projects and collaborating with cross-functional teams to deliver clear and engaging brand communication.
               </p>
-              <p>
+              {/* <p>
                 With a passion for storytelling and a talent for crafting compelling copy that appeals to both casual and
                 hardcore readers, Alghi holds a{' '}
                 <strong className="text-gray-200">Bachelor of Communication Science in Marketing Communication</strong>{' '}
                 from Telkom University with multiple certifications in digital marketing and analytics.
-              </p>
+              </p> */}
             </div>
 
             {/* Skills pills */}
-            <div className="mt-8">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">Skills & Expertise</p>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span
-                    key={skill.label}
-                    className={`skill-pill border text-sm ${skill.color}`}
-                  >
-                    {skill.label}
-                  </span>
-                ))}
-              </div>
+            <div className="mt-8 space-y-6">
+              {skillCategories.map((category, idx) => (
+                <div key={idx}>
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">
+                    {category.title}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <span
+                        key={skill.label}
+                        className={`skill-pill border text-sm ${skill.color}`}
+                      >
+                        {skill.label}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

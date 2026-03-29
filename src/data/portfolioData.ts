@@ -922,15 +922,24 @@ export const portfolioItems: PortfolioItem[] = [
 
 // ─── Skills ─────────────────────────────────────────────────────────────────
 
-export const skills = [
-  { label: 'SEO Writing', color: 'bg-blue-500/15 text-blue-400 border-blue-500/30' },
-  { label: 'Keyword Research', color: 'bg-teal-500/15 text-teal-400 border-teal-500/30' },
-  { label: 'Yoast SEO', color: 'bg-green-500/15 text-green-400 border-green-500/30' },
-  { label: 'Storytelling', color: 'bg-purple-500/15 text-purple-400 border-purple-500/30' },
-  { label: 'Copywriting', color: 'bg-purple-500/15 text-purple-400 border-purple-500/30' },
-  { label: 'Content Strategy', color: 'bg-rose-500/15 text-rose-400 border-rose-500/30' },
-  { label: 'Content Marketing', color: 'bg-indigo-500/15 text-indigo-400 border-indigo-500/30' },
-  { label: 'Google Analytics', color: 'bg-orange-500/15 text-orange-400 border-orange-500/30' },
+export const skillCategories = [
+  {
+    title: 'Content & Strategy',
+    skills: [
+      { label: 'Copywriting', color: 'bg-purple-500/15 text-purple-400 border-purple-500/30' },
+      { label: 'Content Strategy', color: 'bg-rose-500/15 text-rose-400 border-rose-500/30' },
+      { label: 'Content Planning', color: 'bg-blue-500/15 text-blue-400 border-blue-500/30' },
+      { label: 'Editorial Planning', color: 'bg-teal-500/15 text-teal-400 border-teal-500/30' },
+    ]
+  },
+  {
+    title: 'Management & Research',
+    skills: [
+      { label: 'Creative Project Management', color: 'bg-green-500/15 text-green-400 border-green-500/30' },
+      { label: 'Research & Insight Analysis', color: 'bg-indigo-500/15 text-indigo-400 border-indigo-500/30' },
+      { label: 'Project Coordination', color: 'bg-orange-500/15 text-orange-400 border-orange-500/30' },
+    ]
+  }
 ];
 
 export const FILTER_CATEGORIES: Array<Category | 'All'> = ['All', 'Tech', 'Finance', 'Game', 'Pop Culture', 'News'];
