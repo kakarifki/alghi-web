@@ -1,6 +1,6 @@
 // ─── Type Definitions ───────────────────────────────────────────────────────
 
-export type Category = 'Copywriting' | 'Tech' | 'Finance' | 'Game' | 'Pop Culture' | 'News';
+export type Category = 'Tech' | 'Finance' | 'Game' | 'Pop Culture' | 'News' | 'SP Group' | 'Fluimucil' | 'United Medicare Centre' | 'Nasaval' | 'Goritax';
 
 export interface PortfolioItem {
   id: number;
@@ -77,15 +77,6 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
       { label: 'Medium', url: 'https://medium.com/@moonsoaked' },
     ],
   },
-  'Copywriting': {
-    tagline: 'Copy yang mengkonversi — bukan sekadar terlihat bagus.',
-    description:
-      'Alghi mengerjakan landing page, email campaign, dan materi iklan dengan pendekatan ' +
-      'berbasis data: setiap kata dipilih untuk mendorong aksi nyata dari pembaca.',
-    links: [
-      { label: 'Hubungi Alghi', url: 'mailto:alghialghi23@gmail.com' },
-    ],
-  },
   'News': {
     tagline: 'Berita bisnis dan startup yang langsung ke inti.',
     description:
@@ -94,6 +85,31 @@ export const CATEGORY_INFO: Record<Category, CategoryInfo> = {
     links: [
       { label: 'Tempo.co', url: 'https://tempo.co' },
     ],
+  },
+  'SP Group': {
+    tagline: 'Energizing the Future',
+    description: 'Content and campaigns developed for SP Group to promote sustainable energy solutions.',
+    links: [],
+  },
+  'Fluimucil': {
+    tagline: 'Clear Your Airways',
+    description: 'Health and wellness content strategically crafted to educate audiences about respiratory care.',
+    links: [],
+  },
+  'United Medicare Centre': {
+    tagline: 'Caring for Generations',
+    description: 'Compassionate and informative copy designed to highlight eldercare services and community support.',
+    links: [],
+  },
+  'Nasaval': {
+    tagline: 'Breathe Easy',
+    description: 'Product-focused communication material emphasizing allergy relief and preventive care.',
+    links: [],
+  },
+  'Goritax': {
+    tagline: 'Tax Made Simple',
+    description: 'Simplifying complex tax regulations into digestible content for everyday users.',
+    links: [],
   },
 };
 
@@ -108,8 +124,12 @@ export const CATEGORY_SUBS: Record<Category, string[]> = {
   'Finance': ['Investing', 'Personal Finance', 'Economics'],
   'Game': ['Guides', 'Builds', 'Updates'],
   'Pop Culture': ['Music', 'Anime'],
-  'Copywriting': ['Landing Page', 'Email Campaign', 'Social Media'],
   'News': ['Startup', 'Business'],
+  'SP Group': ['Campaign', 'Social Media'],
+  'Fluimucil': ['Health Article', 'Ads'],
+  'United Medicare Centre': ['Brochure', 'Web Copy'],
+  'Nasaval': ['Product Copy', 'Social Media'],
+  'Goritax': ['Blog', 'Newsletter'],
 };
 
 // ─── Portfolio Data ──────────────────────────────────────────────────────────
@@ -790,27 +810,63 @@ export const portfolioItems: PortfolioItem[] = [
     date: '2020',
   },
 
-  // ── Copywriting / Landing Page ──────────────────────────────────────────────
+  // ── SP Group ──────────────────────────────────────────────────────────────
   {
-    id: 11,
-    title: 'Landing Page Copy — Aplikasi Fintech Peer-to-Peer Lending',
-    category: 'Copywriting',
-    subCategory: 'Landing Page',
-    publication: 'Client Project',
-    highlight: 'Conversion rate naik 34% dibanding copy sebelumnya (A/B test)',
-    link: 'https://drive.google.com',
+    id: 101,
+    title: 'Sustainability Campaign 2024',
+    category: 'SP Group',
+    subCategory: 'Campaign',
+    publication: 'SP Group Portal',
+    highlight: 'Drove 20% increase in user engagement for green energy initiatives.',
+    link: '#',
     date: '2024',
   },
 
-  // ── Copywriting / Email Campaign ────────────────────────────────────────────
+  // ── Fluimucil ──────────────────────────────────────────────────────────────
   {
-    id: 12,
-    title: 'Email Campaign Series — E-commerce Fashion Lokal',
-    category: 'Copywriting',
-    subCategory: 'Email Campaign',
-    publication: 'Client Project',
-    highlight: 'Open rate 42% & click rate 18% — jauh di atas benchmark industri',
-    link: 'https://drive.google.com',
+    id: 102,
+    title: 'Respiratory Health 101',
+    category: 'Fluimucil',
+    subCategory: 'Health Article',
+    publication: 'Fluimucil Blog',
+    highlight: 'Top performing article with over 10,000 unique page views.',
+    link: '#',
+    date: '2023',
+  },
+
+  // ── United Medicare Centre ────────────────────────────────────────────────
+  {
+    id: 103,
+    title: 'Eldercare Services Overview',
+    category: 'United Medicare Centre',
+    subCategory: 'Web Copy',
+    publication: 'UMC Official Website',
+    highlight: 'Revamped copy that reduced bounce rate by 15%.',
+    link: '#',
+    date: '2023',
+  },
+
+  // ── Nasaval ────────────────────────────────────────────────────────────────
+  {
+    id: 104,
+    title: 'Allergy Season Guide',
+    category: 'Nasaval',
+    subCategory: 'Product Copy',
+    publication: 'Nasaval Social',
+    highlight: 'Helped launch the new nasal spray line successfully.',
+    link: '#',
+    date: '2024',
+  },
+
+  // ── Goritax ────────────────────────────────────────────────────────────────
+  {
+    id: 105,
+    title: 'Tax Planning for Freelancers',
+    category: 'Goritax',
+    subCategory: 'Blog',
+    publication: 'Goritax Insight',
+    highlight: 'Shared over 500 times across social media platforms.',
+    link: '#',
     date: '2024',
   },
 
@@ -840,13 +896,21 @@ export const skills = [
   { label: 'Google Analytics', color: 'bg-orange-500/15 text-orange-400 border-orange-500/30' },
 ];
 
-export const FILTER_CATEGORIES: Array<Category | 'All'> = ['All', 'Tech', 'Finance', 'Game', 'Pop Culture', 'Copywriting', 'News'];
+export const FILTER_CATEGORIES: Array<Category | 'All'> = ['All', 'Tech', 'Finance', 'Game', 'Pop Culture', 'News'];
+
+export const STRATEGIST_CATEGORIES: Array<Category | 'All'> = ['All', 'SP Group', 'Fluimucil', 'United Medicare Centre', 'Nasaval', 'Goritax', 'Finance'];
+
+export const WRITING_CATEGORIES: Array<Category | 'All'> = ['All', 'Pop Culture', 'Game', 'Tech', 'News'];
 
 export const CATEGORY_BADGE: Record<Category, string> = {
   'Tech': 'badge-tech',
   'Finance': 'badge-finance',
   'Game': 'badge-game',
   'Pop Culture': 'badge-pop',
-  'Copywriting': 'badge-copy',
   'News': 'badge-news',
+  'SP Group': 'badge-tech',
+  'Fluimucil': 'badge-finance',
+  'United Medicare Centre': 'badge-pop',
+  'Nasaval': 'badge-news',
+  'Goritax': 'badge-game',
 };
