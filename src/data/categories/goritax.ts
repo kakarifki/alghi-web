@@ -14,7 +14,7 @@ export const goritaxData: CategoryData = {
     {
       id: 105,
       type: 'instagram',
-      title: 'Jadi Pawang Hujan dibayar 3 digit, Kira kira Pajaknya berapa ya?',
+      title: 'So the Rain Shaman is paid 3 digits, how much is the tax, I wonder?',
       category: 'Goritax',
       subCategory: '',
       publication: 'Goritax',
