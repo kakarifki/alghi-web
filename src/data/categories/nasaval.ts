@@ -32,7 +32,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Stay protected with Nasaval as part of your routine!',
       link: 'https://www.instagram.com/p/DB_LtIOOE4m/',
       date: '2024',
-      image: '/images/nasaval/nasaval 2.png',
+      image: '/images/nasaval/nasaval 2.jpg',
       caption: 'Stay protected with Nasaval as part of your routine!',
     },
     {
@@ -45,7 +45,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Let your imagination soar without stressing over airborne germs & viruses!',
       link: 'https://www.instagram.com/p/DBbBr4GKD37/',
       date: '2024',
-      image: '/images/nasaval/nasaval 3.png',
+      image: '/images/nasaval/nasaval 3.jpg',
       caption: 'Let your imagination soar without stressing over airborne germs & viruses!',
     },
     {
@@ -58,7 +58,7 @@ export const nasavalData: CategoryData = {
       highlight: '🤗💖 Nasaval protects you against colds and is safe for those with asthma.',
       link: 'https://www.instagram.com/p/DAnhy5pvpJv/',
       date: '2024',
-      image: '/images/nasaval/nasaval 4.png',
+      image: '/images/nasaval/nasaval 4.jpg',
       caption: '🤗💖 Nasaval protects you against colds and is safe for those with asthma.',
     },
     {
@@ -71,7 +71,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Whether you\'re on the track, field, or in the gym, Nasaval is your go-to protection from cold and flu 🏃🏃‍♀️',
       link: 'https://www.instagram.com/p/C-pW3peNGvH/',
       date: '2024',
-      image: '/images/nasaval/nasaval 5.png',
+      image: '/images/nasaval/nasaval 5.jpg',
       caption: 'Whether you\'re on the track, field, or in the gym, Nasaval is your go-to protection from cold and flu 🏃🏃‍♀️',
     },
     {
@@ -84,7 +84,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Keep Nasaval in your bag to stay protected and healthy wherever you go!',
       link: 'https://www.instagram.com/p/C8rL33cMz2l/',
       date: '2024',
-      image: '/images/nasaval/nasaval 6.png',
+      image: '/images/nasaval/nasaval 6.jpg',
       caption: 'Keep Nasaval in your bag to stay protected and healthy wherever you go!',
     },
     {
@@ -97,7 +97,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Nasaval\'s natural barrier keeps you protected in every situation🛡️🌦️',
       link: 'https://www.instagram.com/p/C6LilLhCVXP/',
       date: '2024',
-      image: '/images/nasaval/nasaval 7.png',
+      image: '/images/nasaval/nasaval 7.jpg',
       caption: 'Nasaval\'s natural barrier keeps you protected in every situation🛡️🌦️',
     },
     {
@@ -110,7 +110,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Show us your inventive ways to recycle Nasaval and inspire others in the comments!',
       link: 'https://www.instagram.com/p/C7REE_5puk7/?img_index=1',
       date: '2024',
-      image: '/images/nasaval/nasaval 8.png',
+      image: '/images/nasaval/nasaval 8.jpg',
       caption: 'Show us your inventive ways to recycle Nasaval and inspire others in the comments!',
     },
     {
@@ -123,7 +123,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Spray Nasaval 1–2 times per nostril, 3x daily, and feel better drug-free until symptoms disappear! ✨',
       link: 'https://www.instagram.com/p/C4aPsh2NzLT/',
       date: '2024',
-      image: '/images/nasaval/nasaval 9.png',
+      image: '/images/nasaval/nasaval 9.jpg',
       caption: 'Spray Nasaval 1–2 times per nostril, 3x daily, and feel better drug-free until symptoms disappear! ✨',
     },
     {
@@ -136,7 +136,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Neutralise airborne germs and viruses effortlessly!',
       link: 'https://www.instagram.com/p/C2hOS2LIgk1/',
       date: '2024',
-      image: '/images/nasaval/nasaval 10.png',
+      image: '/images/nasaval/nasaval 10.jpg',
       caption: 'Neutralise airborne germs and viruses effortlessly!',
     },
     {
@@ -149,7 +149,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Stay safe from airborne germs and viruses with Nasaval',
       link: 'https://www.instagram.com/p/CxFm-s1PMdT/',
       date: '2024',
-      image: '/images/nasaval/nasaval 11.png',
+      image: '/images/nasaval/nasaval 11.jpg',
       caption: 'Stay safe from airborne germs and viruses with Nasaval',
     },
     {
@@ -162,7 +162,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Don\'t let cold & flu crash your Chinese New Year party 🧧',
       link: 'https://www.instagram.com/p/C3H2MhpIw_4/',
       date: '2024',
-      image: '/images/nasaval/nasaval 12.png',
+      image: '/images/nasaval/nasaval 12.jpg',
       caption: 'Don\'t let cold & flu crash your Chinese New Year party 🧧',
     },
     {
@@ -175,7 +175,7 @@ export const nasavalData: CategoryData = {
       highlight: 'Avoid empty bottle surprises!',
       link: 'https://www.instagram.com/p/C5Nvi0pK38k/',
       date: '2024',
-      image: '/images/nasaval/nasaval 13.png',
+      image: '/images/nasaval/nasaval 13.jpg',
       caption: 'Avoid empty bottle surprises!',
     }
   ],

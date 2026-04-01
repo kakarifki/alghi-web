@@ -32,7 +32,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Worry less about phlegm and stay focused at work—Fluimucil has got you covered!',
       link: 'https://www.instagram.com/p/C-99NDiCo7p/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 2.png',
+      image: '/images/fluimucil/fluimucil 2.jpg',
       caption: 'Worry less about phlegm and stay focused at work—Fluimucil has got you covered!',
     },
     {
@@ -45,7 +45,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Count on Fluimucil to feel revitalised and free from discomfort.',
       link: 'https://www.instagram.com/p/C9PPACKtDE4/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 3.png',
+      image: '/images/fluimucil/fluimucil 3.jpg',
       caption: 'Count on Fluimucil to feel revitalised and free from discomfort.',
     },
     {
@@ -58,7 +58,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Phlegm-free adventures await! Wherever you are, find relief with Fluimucil🌎',
       link: 'https://www.instagram.com/p/C8Wlh3mJNT_/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 4.png',
+      image: '/images/fluimucil/fluimucil 4.jpg',
       caption: 'Phlegm-free adventures await! Wherever you are, find relief with Fluimucil🌎',
     },
     {
@@ -71,7 +71,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Fluimucil 100mg helps kids (≥2 yrs) and adults feel better—follow the recommended dosage for fast relief!',
       link: 'https://www.instagram.com/p/C73r_XYtwQG/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 5.png',
+      image: '/images/fluimucil/fluimucil 5.jpg',
       caption: 'Fluimucil 100mg helps kids (≥2 yrs) and adults feel better—follow the recommended dosage for fast relief!',
     },
     {
@@ -84,7 +84,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Test your ear and share your answers!',
       link: 'https://www.instagram.com/p/C4c0czTtFgH/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 6.png',
+      image: '/images/fluimucil/fluimucil 6.jpg',
       caption: 'Test your ear and share your answers!',
     },
     {
@@ -97,7 +97,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Fluimucil is the reliable remedy you need for fast phlegm relief!',
       link: 'https://www.instagram.com/p/C0d5wUqqhCz/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 7.png',
+      image: '/images/fluimucil/fluimucil 7.jpg',
       caption: 'Fluimucil is the reliable remedy you need for fast phlegm relief!',
     },
     {
@@ -110,7 +110,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Keep phlegm away effortlessly—discover your perfect partner in relief with Fluimucil!',
       link: 'https://www.instagram.com/p/C1jbPjehoj5/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 8.png',
+      image: '/images/fluimucil/fluimucil 8.jpg',
       caption: 'Keep phlegm away effortlessly—discover your perfect partner in relief with Fluimucil!',
     },
     {
@@ -123,7 +123,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Fluimucil helps you discard phlegm effortlessly!',
       link: 'https://www.instagram.com/p/CxaNVNFPQMZ/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 9.png',
+      image: '/images/fluimucil/fluimucil 9.jpg',
       caption: 'Fluimucil helps you discard phlegm effortlessly!',
     },
     {
@@ -136,7 +136,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Say goodbye to throat clearing and phlegm—make every movie night smooth and cozy!',
       link: 'https://www.instagram.com/p/Cz8bZgQqzJz/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 10.png',
+      image: '/images/fluimucil/fluimucil 10.jpg',
       caption: 'Say goodbye to throat clearing and phlegm—make every movie night smooth and cozy!',
     },
     {
@@ -149,7 +149,7 @@ export const fluimucilData: CategoryData = {
       highlight: 'Effective phlegm relief for the whole family!',
       link: 'https://www.instagram.com/p/C68ds9tCMHI/',
       date: '2024',
-      image: '/images/fluimucil/fluimucil 11.png',
+      image: '/images/fluimucil/fluimucil 11.jpg',
       caption: 'Effective phlegm relief for the whole family!',
     }
   ],

@@ -32,7 +32,7 @@ export const umcData: CategoryData = {
       highlight: 'AI-powered interactive games meet occupational therapy to enhance seniors’ wellness and engagement! 🌐💙',
       link: 'https://www.instagram.com/p/C24Zgwiol1M/',
       date: '2024',
-      image: '/images/umc/umc 3.png',
+      image: '/images/umc/umc 2.jpg',
       caption: 'AI-powered interactive games meet occupational therapy to enhance seniors’ wellness and engagement! 🌐💙',
     },
     {
@@ -45,7 +45,7 @@ export const umcData: CategoryData = {
       highlight: 'Sharpening the mind through Cognitive Stimulation Therapy! 🧠✨',
       link: 'https://www.instagram.com/p/C1_v8DwPxqM/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 4.png',
+      image: '/images/umc/umc 3.jpg',
       caption: 'Sharpening the mind through Cognitive Stimulation Therapy! 🧠✨',
     },
     {
@@ -58,7 +58,7 @@ export const umcData: CategoryData = {
       highlight: 'Our nursing home supports both the physical and emotional well-being of your loved ones for a fulfilling life.',
       link: 'https://www.instagram.com/p/C0gehoMplHQ/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 5.png',
+      image: '/images/umc/umc 4.jpg',
       caption: 'Our nursing home supports both the physical and emotional well-being of your loved ones for a fulfilling life.',
     },
     {
@@ -71,7 +71,7 @@ export const umcData: CategoryData = {
       highlight: 'Regular calls, video chats, and visits keep your loved ones’ days bright—distance is just a detail!',
       link: 'https://www.instagram.com/p/C0Bl9ErRgrm/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 6.png',
+      image: '/images/umc/umc 5.jpg',
       caption: 'Regular calls, video chats, and visits keep your loved ones’ days bright—distance is just a detail!',
     },
     {
@@ -84,7 +84,7 @@ export const umcData: CategoryData = {
       highlight: 'Check out our essential shopping list to meet your parents’ changing nutritional needs!',
       link: 'https://www.instagram.com/p/Cu9QTfoLKR-/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 7.png',
+      image: '/images/umc/umc 6.jpg',
       caption: 'Check out our essential shopping list to meet your parents’ changing nutritional needs!',
     },
     {
@@ -97,7 +97,7 @@ export const umcData: CategoryData = {
       highlight: 'Make your parents’ day special by showing love in the way they cherish most! 😃',
       link: 'https://www.instagram.com/p/Crk2BGjOhmR/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 8.png',
+      image: '/images/umc/umc 7.jpg',
       caption: 'Make your parents’ day special by showing love in the way they cherish most! 😃',
     },
     {
@@ -110,7 +110,7 @@ export const umcData: CategoryData = {
       highlight: 'Prevent slips and falls with simple tips to create an elderly-friendly bathroom!',
       link: 'https://www.instagram.com/p/CrAy5DCpokS/?img_index=1',
       date: '2024',
-      image: '/images/umc/umc 9.png',
+      image: '/images/umc/umc 8.jpg',
       caption: 'Prevent slips and falls with simple tips to create an elderly-friendly bathroom!',
     }
   ],
